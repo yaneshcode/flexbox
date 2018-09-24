@@ -13,7 +13,6 @@
 }
 
 .menu {
-  border: 1px solid #fff;  /* For debugging */
   width: 900px;
   display: flex;
   justify-content: space-between;
@@ -26,6 +25,10 @@
 
 .login {
 	margin-left: 20px;
+}
+
+.signup {
+	margin-left: auto;
 }
 
 .header-container{
@@ -44,9 +47,9 @@
 }
 
 .social,
-.logo,
 .subscribe {
-	border: 1px solid #5995DA;
+	align-self: flex-end;
+	margin-bottom: 20px;
 }
 .photo-grid-container {
 	  display: flex;
@@ -58,6 +61,8 @@
 	        display: flex;
 		  justify-content: center;
 		  flex-wrap: wrap;
+		  flex-direction: row;
+		  align-items: center;
 	  }
 
 	  .photo-grid-item {
@@ -65,3 +70,30 @@
 		      width: 300px;
 		        height: 300px;
 		}
+
+.first-item {
+	order: 1;
+}
+
+.last-item {
+	order: 2;
+}
+
+.footer {
+	display:flex;
+	justify-content: space-between;
+}
+
+.footer-item {
+	border: 1px solid #fff;
+	background-color: #D6e9fe;
+	height:200px;
+	flex: 1;
+}
+
+.footer-one,
+.footer-three {
+	flex: initial;
+	background-color: #5995da;
+	width: 300px;
+}
